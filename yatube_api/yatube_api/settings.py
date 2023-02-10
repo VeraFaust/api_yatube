@@ -26,7 +26,6 @@ INSTALLED_APPS = [
     'posts.apps.PostsConfig',
     'rest_framework',
     'rest_framework.authtoken',
-    'djoser',
     'api',
 ]
 
