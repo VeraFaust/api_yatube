@@ -18,6 +18,7 @@ router_v1.register(
 )
 
 urlpatterns = [
+    # Получение токена
     path('v1/api-token-auth/', views.obtain_auth_token),
     path('v1/', include(router_v1.urls)),
 ]

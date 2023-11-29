@@ -5,24 +5,24 @@ User = get_user_model()
 
 
 class Group(models.Model):
-    """Группы."""
+    """Модель для группы."""
     title = models.CharField(max_length=200)
     slug = models.SlugField(unique=True)
     description = models.TextField()
 
     class Meta:
-        verbose_name_plural = 'Группы'
         verbose_name = 'Группа'
+        verbose_name_plural = 'Группы'
 
     def __str__(self):
         return self.title
 
 
 class Post(models.Model):
-    """Посты."""
+    """Модель для поста."""
     text = models.TextField()
     pub_date = models.DateTimeField(
-        'Дата публикации',
+        verbose_name='Дата публикации',
         auto_now_add=True
     )
     author = models.ForeignKey(
@@ -44,15 +44,15 @@ class Post(models.Model):
     )
 
     class Meta:
-        verbose_name_plural = 'Посты'
         verbose_name = 'Пост'
+        verbose_name_plural = 'Посты'
 
     def __str__(self):
         return self.text
 
 
 class Comment(models.Model):
-    """Комментарии."""
+    """Модель для комментария."""
     author = models.ForeignKey(
         User,
         on_delete=models.CASCADE,
@@ -65,7 +65,7 @@ class Comment(models.Model):
     )
     text = models.TextField()
     created = models.DateTimeField(
-        'Дата добавления',
+        verbose_name='Дата добавления',
         auto_now_add=True,
         db_index=True
     )
