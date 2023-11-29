@@ -88,8 +88,11 @@ POST .../api/v1/posts/14/comments/
 ```
 {
     "text": "тест тест"
-} 
+}
+```
+
 Пример ответа:
+```
 {
     "id": 4,
     "author": "anton",
