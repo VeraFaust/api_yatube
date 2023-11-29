@@ -10,6 +10,7 @@ API доступно аутентифицированным пользовате
 ## Технологии:
 - Python;
 - Git;
+- DRF;
 - API;
 - REST API;
 - JWT + Djoser.
