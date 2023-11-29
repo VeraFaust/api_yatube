@@ -19,7 +19,7 @@ API доступно аутентифицированным пользовате
 ## Запуск проекта:
 - Клонируйте репозиторий:
 ```
-git clone https://github.com/VeraFaust/homework_bot.git
+git clone https://github.com/VeraFaust/api_yatube.git
 ```
 
 - Установите и активируйте виртуальное окружение:
